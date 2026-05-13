@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#d9d9d9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+    font-family:'Handlee', cursive;
+}
+
+.card{
+    background:#f8f5f1;
+    width:750px;
+    max-width:100%;
+    padding:40px;
+    border:3px solid #e5e5e5;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.top-icon{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.greetings{
+    text-align:center;
+    font-size:70px;
+    font-family:'Great Vibes', cursive;
+    margin-bottom:20px;
+    color:#222;
+}
+
+.content{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.text{
+    flex:1;
+    min-width:250px;
+    font-size:28px;
+    line-height:1.7;
+    color:#444;
+}
+
+.ender{
+    margin-top:20px;
+    font-family:'Great Vibes', cursive;
+    font-size:35px;
+}
+
+.slider{
+    width:260px;
+
+    display:flex;
+    overflow-x:auto;
+
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+
+    gap:15px;
+
+    transform:rotate(0deg);
+}
+
+.slider::-webkit-scrollbar{
+    display:none;
+}
+
+.slide{
+    min-width:100%;
+    scroll-snap-align:center;
+
+    background:white;
+    padding:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.slide img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    display:block;
+}
+
+.caption{
+    text-align:center;
+    margin-top:10px;
+    font-family:'Great Vibes', cursive;
+    font-size:24px;
+    color:#555;
+}
+
+@media(max-width:768px){
+
+.title{
+    font-size:50px;
+}
+
+.text{
+    font-size:22px;
+}
+
+.slider{
+    width:100%;
+}
+
+.slide img{
+    height:400px;
+}
+
+}
